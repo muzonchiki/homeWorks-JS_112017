@@ -5,8 +5,8 @@
 
  Функция должна принимать один аргумент и возвращать его
  */
-function returnFirstArgument(arg) {
-    return arg;
+function returnFirstArgument(argum) {
+    return argum;
 }
 
 /*
@@ -32,7 +32,7 @@ function defaultParameterValue(a, b) {
 function returnArgumentsArray() {
     let arr = [];
 
-    for (let i =0; i < arguments.length; i++) {
+    for (let i = 0; i < arguments.length; i++) {
         arr.push(arguments[i]);
     }
 
