@@ -5,8 +5,8 @@
 
  Функция должна принимать один аргумент и возвращать его
  */
-function returnFirstArgument(argum) {
-    return argum;
+function returnFirstArgument(arg) {
+    return arg;
 }
 
 /*
@@ -16,7 +16,7 @@ function returnFirstArgument(argum) {
  Значение по умолчанию второго аргумента должно быть 100
  */
 function defaultParameterValue(a, b) {
-    if (b == undefined) {
+    if (arguments.length < 2) {
         b = 100;
     }
 
@@ -48,11 +48,6 @@ function returnFnResult(fn) {
     return fn();
 }
 
-function func() {
-    return;
-}
-
-returnFnResult(func);
 /*
  Задание 5:
 
@@ -71,8 +66,6 @@ function returnCounter(number) {
     }
 }
 
-returnCounter(1);
-
 /*
  Задание 6 *:
 
@@ -80,6 +73,7 @@ returnCounter(1);
  Функция должна привязать переданные аргументы к функции F и вернуть получившуюся функцию
  */
 function bindFunction(fn) {
+    return fn;
 }
 
 export {
