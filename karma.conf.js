@@ -1,4 +1,4 @@
-process.env.CHROME_BIN = require('puppeteer').executablePath();
+process.env.CHROME_BIN = require('puppeteer').executablePath()
 
 module.exports = function(config) {
     config.set({
@@ -28,7 +28,7 @@ module.exports = function(config) {
             require('karma-chai'),
             require('karma-webpack'),
             require('karma-mocha-reporter'),
-            require('karma-firefox-launcher'),
+            //require('karma-firefox-launcher'),
             require('karma-chrome-launcher'),
             require('karma-coverage-istanbul-reporter'),
             require('karma-sourcemap-loader')
