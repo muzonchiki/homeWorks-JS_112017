@@ -23,9 +23,9 @@ function delayPromise(seconds) {
  */
 function loadAndSortTowns() {
     return new Promise( (resolve) => {
-        const req = XMLHttpRequest;
+        const req = new XMLHttpRequest;
 
-        req.open('get', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json');
+        req.open('GET', 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json');
         req.send();
         req.addEventListener('load', () => {
             let arr = JSON.parse(req.response);
